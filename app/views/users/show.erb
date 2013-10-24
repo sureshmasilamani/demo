@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>attr demo</title>
+<style>
+div {
+color: blue;
+}
+em {
+color: red;
+}
+b {
+font-weight: bolder;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body>
+<div>Zero-th <em></em></div>
+<div>First <em></em></div>
+<div>Second <em></em></div>
+<script>
+$("div").attr("id",function(arr){return "div-id" + arr;}).each(function(){$("em",this).html("(id='<b>"+this.id+"</b>')");});
+</script>
+</body>
+</html>

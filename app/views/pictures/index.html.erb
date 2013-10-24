@@ -1,0 +1,13 @@
+
+<table>
+<tr>
+	<td>
+	<%= select('branch','name', get_banking_with_select('brabch_name'),{},{:style=>"width:100px;"}) %>	
+	</td>
+    <td>
+	<%= select('branch','code', get_banking_with_select('brabch_code'),{},{:style=>"width:100px;"}) %>	
+	</td>
+<td><input type='button' value='Fetch' class='buttons' onclick="sss();"></td>
+</tr>
+</table>
+

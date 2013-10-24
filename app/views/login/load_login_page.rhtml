@@ -1,0 +1,68 @@
+
+<h1>send mail </h1>
+<%= form_tag({:action=>"uploadFile_mail_to_patient"},:multipart=>true) do  %>
+<table align="center" bgcolor="#5589b8" border="1" height="140" width="590">
+    <tbody>
+        <tr>
+            <td>
+                <table align="center" background="./images/bg_img.jpg" bgcolor="#5589b8" width="590">
+                    <tbody>
+                        <tr>
+                            <td class="link" align="center">
+                                <font style="" color="black" size="5">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Send Mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Name</b>
+                                <%= text_field 'mail_detail', 'to_user_id',:value=> 'ssssss' %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Email Id</b>
+
+                                <%= text_field 'mail_detail', 'to_mail' %>
+                                <%= hidden_field 'mail_detail', 'from_user_id',:value=>'1' %>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Subject:</b>
+                                <%= text_field 'mail_detail', 'subject', :size=>50 %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>text</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <%= text_area 'mail_detail', 'text' , :rows=>6, :cols=>80 ,:value=>'Hi,' %>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align=center>
+                            <%= submit_tag 'send', :class=> 'buttons' %>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </form>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<%end%>

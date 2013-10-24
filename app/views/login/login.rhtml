@@ -1,0 +1,28 @@
+<table border="0px">
+	<tr>
+		<td>
+				User Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=text_field_tag 'user_name'%>
+		</td>
+	</tr>
+		<tr>
+		<td>
+				User Password:<%=password_field_tag 'user_password'%>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				User Location:&nbsp;<%=text_field_tag 'user_location'%>
+		</td>
+	</tr>
+
+</table><div id='load_external'></div>
+<input type='button' value='Submit' class='buttons' onclick="load_login();" />
+<script>
+	function load_login()
+	{
+		var pars = "user_name="+$F('user_name')+"&user_password="+$F('user_password')+"&user_location="+$F('user_location');
+         var myAjax = new Ajax.Updater("load_external", '/login/load_login_page',{parameters:pars,method:'get'})
+	}
+</script>
+
+	

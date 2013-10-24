@@ -1,0 +1,51 @@
+/* Styles for main page */
+#banner {
+background: #FFCCCC ;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 2px solid;
+font: small-caps 40px/80px "Times New Roman", serif;
+color: #F09 ;
+text-align: center;
+}
+#banner img {
+float: left;
+}
+#store{
+margin-top:0px;
+margin-right:0px;
+margin-bottom:0px;
+margin-left:0px; 
+}
+#columns {
+width: 13em;
+background: #9999CC ;
+}
+#main {
+margin-left: 13em;
+padding-top: 4ex;
+padding-bottom: 53ex;
+padding-left: 2em;
+background: #CF6;
+}
+#side {
+float: left;
+padding-top: 1em;
+padding-left: 1em;
+padding-bottom: 1em;
+width: 12em;
+background: #F00FF ;
+}
+#side a {
+color: #F00FF ;
+font-size: small;
+}
+
+#notice {
+border: 2px solid red;
+padding: 1em;
+margin-bottom: 2em;
+background-color: #f0f0f0 ;
+font: bold smaller sans-serif;
+}
+
